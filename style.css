@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
+
+html {
+    font-family: Rubik Doodle Shadow;
+    box-sizing: border-box;
+    background-color: darkgray;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.congrats_text {
+    text-align: center;
+}
+
+.congrats_text[data-display="none"] {
+    display: none;
+}
+
+.congrats_text[data-display="block"] {
+    display: block;
+}
+
+.timer__items, .congrats_text {
+    display: flex;
+    font-size: 60px;
+    color: whitesmoke;
+}
+
+.timer__items[data-display="none"] {
+    display: none;
+}
+
+.timer__items[data-display="flex"] {
+    display: flex;
+}
+
+.timer__item {
+    position: relative;
+    min-width: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 15px;
+    text-align: center;
+    padding-right: 10px;
+}
+.timer__item::before {
+    content: attr(data-title);
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    font-size: 14px;
+}
+.timer__item:not(:last-child)::after {
+    content: ':';
+    position: absolute;
+    right: -15px;
+}
