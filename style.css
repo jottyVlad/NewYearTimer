@@ -18,7 +18,7 @@ body {
     height: 100vh;
 }
 
-.congrats_text {
+.congrats_text, .wait_2025{
     text-align: center;
 }
 
@@ -28,6 +28,14 @@ body {
 
 .congrats_text[data-display="block"] {
     display: block;
+}
+
+.wait_2025 {
+    display: flex;
+    font-size: 50px;
+    color: antiquewhite;
+    justify-content: center;
+    padding-top: 25px;
 }
 
 .timer__items, .congrats_text {
