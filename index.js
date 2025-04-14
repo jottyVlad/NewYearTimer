@@ -8,7 +8,7 @@ $(document).snowfall({
 
 document.addEventListener('DOMContentLoaded', function() {
     // конечная дата, например 1 июля 2021
-    const deadline = new Date(2025, 0, 1, 0, 0, 0);
+    const deadline = new Date(2026, 0, 1, 0, 0, 0);
     // id таймера
     let timerId = null;
     // склонение числительных
